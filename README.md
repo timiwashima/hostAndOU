@@ -4,12 +4,19 @@ If you have a list of the hosts, the hosts must have either single quotes, or do
 
 ![image](https://github.com/timiwashima/hostAndOU/assets/52045865/762f82f8-8d8f-49bd-8b9c-83108a2979ae)
 
-Select the cells, in the Home tab, select Format→Format Cells.  Choose Custom, and in the Type text box, enter: '@'.
-
 ![image](https://github.com/timiwashima/hostAndOU/assets/52045865/66900c23-b434-4cf8-96a4-d24c16caa489)
 
-If the list you have is not CSV formatted, or the cells are in a row instead of a column, select the individual cells in the column (not the column itself) and copy them, make a new Excel file, or a new sheet.  Click the paste icon, and choose Transpose Paste.
-Save the file and open it with a text editor.  The hostnames should now all have quotes around them, and comma-separated.
+Select the cells, in the Home tab, select Format→Format Cells.  Choose Custom, and in the Type text box, enter: '@'.
+
+![image](https://github.com/timiwashima/hostAndOU/assets/52045865/e85cf404-c4e4-4616-9512-426c8ba3d9a8)
+
+![image](https://github.com/timiwashima/hostAndOU/assets/52045865/cb75d7cd-5112-4984-a029-0b04db32e433)
+
+If the list of hosts you have are in a column instead of a row, select the individual cells in the column (not the column itself) and copy them, make a new Excel file, or a new sheet.  Click the paste icon, and choose Transpose Paste.
+
+![image](https://github.com/timiwashima/hostAndOU/assets/52045865/e7409e8c-edc0-4097-b5cc-ae0cbb278377)
+
+Save the file and open it with a text editor.  The hostnames should now all have quotes around them, and comma-separated.  Copy the text.
 
 Create a variable in Powershell (in this script, it's default hosts) and make it equal to the pasted comma-separated, enclosed in single-quotes hostnames.
 Run the script.
