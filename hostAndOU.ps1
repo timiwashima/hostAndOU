@@ -1,0 +1,1 @@
+foreach($host in $hosts){Get-ADComputer -identity $host -Properties ipv4Address, OperatingSystem,DistinguishedName | select-object Name, ipv4Address, OperatingSystem, @{label='OU';expression={$_.DistinguishedName.Split(',')[1].Split('=')[1]}}}
