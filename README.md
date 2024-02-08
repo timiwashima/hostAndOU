@@ -16,6 +16,8 @@ If the list of hosts you have are in a column instead of a row, select the indiv
 
 ![image](https://github.com/timiwashima/hostAndOU/assets/52045865/e7409e8c-edc0-4097-b5cc-ae0cbb278377)
 
+![image](https://github.com/timiwashima/hostAndOU/assets/52045865/9d879652-3140-4aab-a257-d9e77948560f)
+
 Save the file and open it with a text editor.  The hostnames should now all have quotes around them, and comma-separated.  Copy the text.
 
 Create a variable in Powershell (in this script, it's default hosts) and make it equal to the pasted comma-separated, enclosed in single-quotes hostnames.
